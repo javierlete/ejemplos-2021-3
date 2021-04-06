@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TituloComponent } from './titulo.component';
 
 import localeEs from '@angular/common/locales/es';
+import { FormsModule } from '@angular/forms';
 
 registerLocaleData(localeEs, 'es');
 
@@ -17,7 +18,8 @@ registerLocaleData(localeEs, 'es');
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

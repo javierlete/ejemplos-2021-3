@@ -20,4 +20,10 @@ export class AppComponent {
     };
 
   diccionario = { casa: 'home', perro: 'dog', other: 'No reconocido' };
+
+  clases = { importante: true, enfasis: true };
+
+  estilos = { 'font-size': '16px', border: '1px solid black' };
+
+  redondeado = 5;
 }
