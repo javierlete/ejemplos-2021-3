@@ -1,5 +1,35 @@
 <app-titulo texto='{{titulo}}'></app-titulo>
 <app-titulo [texto]='titulo'></app-titulo>
 
+<pre>
+  {{ titulo }}
+  {{ titulo | lowercase }}
+  {{ titulo | uppercase }}
+  {{ titulo | titlecase }}
+  {{ 3.1415926 | number:'1.2-4':'es' }}
+  {{ 12343 | number:'1.2-4':'es' }}
+  {{ 123123123.1234 | currency:'EUR':'symbol':'4.2-2':'es' }}
+  {{ 0.25 | percent:'1.0-0':'es' }}
+  {{ fecha | date:'fullDate':'UTC':'es' | titlecase }}
+  {{ fecha | date:'yyyy-MM-ddTHH:mm':'GMT+2':'es' }}
+  {{ array | slice:2:4 }}
+  {{ 'Este es un texto largo...' | slice:0:10 }}...
+  {{ objeto }}
+  {{ objeto | json }}
+  {{ objeto | keyvalue | json }}
+  {{ 0 | i18nPlural: mapeoMensajes }}
+  {{ 1 | i18nPlural: mapeoMensajes }}
+  {{ 2 | i18nPlural: mapeoMensajes }}
+  {{ 'casa' | i18nSelect:diccionario }}
+  {{ 'perro' | i18nSelect:diccionario }}
+  {{ 'otra cosa' | i18nSelect:diccionario }}
+</pre>
+
+<table border="1">
+  <tr *ngFor="let par of objeto | keyvalue">
+    <td>{{par.key | titlecase }}</td><td>{{par.value}}</td>
+  </tr>
+</table>
+
 <img style="width: 25%" src="{{imgSrc}}" alt="{{imgSrc}}">
 <img style="width: 25%" [src]="imgSrc" [alt]="imgSrc">
