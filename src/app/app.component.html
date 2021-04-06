@@ -1,1 +1,5 @@
-<app-titulo texto='Prueba'></app-titulo>
+<app-titulo texto='{{titulo}}'></app-titulo>
+<app-titulo [texto]='titulo'></app-titulo>
+
+<img style="width: 25%" src="{{imgSrc}}" alt="{{imgSrc}}">
+<img style="width: 25%" [src]="imgSrc" [alt]="imgSrc">
