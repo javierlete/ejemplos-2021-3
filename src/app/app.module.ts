@@ -9,6 +9,7 @@ import { TituloComponent } from './titulo.component';
 import localeEs from '@angular/common/locales/es';
 import { FormsModule } from '@angular/forms';
 import { MayusculadorPipe } from './mayusculador.pipe';
+import { FosforitoDirective } from './fosforito.directive';
 
 registerLocaleData(localeEs, 'es');
 
@@ -16,7 +17,8 @@ registerLocaleData(localeEs, 'es');
   declarations: [
     AppComponent,
     TituloComponent,
-    MayusculadorPipe
+    MayusculadorPipe,
+    FosforitoDirective
   ],
   imports: [
     BrowserModule,

@@ -26,4 +26,8 @@ export class AppComponent {
   estilos = { 'font-size': '16px', border: '1px solid black' };
 
   redondeado = 5;
+
+  colorSeleccionado = '#FFFF00';
+
+  miColor: string;
 }

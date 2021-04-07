@@ -50,3 +50,29 @@
 
 <img style="width: 25%" src="{{imgSrc}}" alt="{{imgSrc}}">
 <img style="width: 25%" [src]="imgSrc" [alt]="imgSrc">
+
+<p appFosforito="cyan">Este texto va a salir en fosforito</p>
+
+<p [appFosforito]="colorSeleccionado">Elige qué color quieres en el cuadro de color</p>
+
+<p appFosforito="{{colorSeleccionado}}">Otro igual</p>
+
+<input type="color" [(ngModel)]="colorSeleccionado">
+
+<div>
+  <input type="radio" name="colors" (click)="colorSeleccionado='#AAFFAA'">Green
+  <input type="radio" name="colors" (click)="colorSeleccionado='#FFFF00'">Yellow
+  <input type="radio" name="colors" (click)="colorSeleccionado='#AAFFFF'">Cyan
+</div>
+
+<p [appFosforito]="miColor" colorPorDefecto="#0000FF">Prueba con azul por defecto</p>
+<p [appFosforito]="miColor">Sin color por defecto</p>
+
+<div>
+  <input type="radio" name="colors" (click)="miColor='#AAFFAA'">Green
+  <input type="radio" name="colors" (click)="miColor='#FFFF00'">Yellow
+  <input type="radio" name="colors" (click)="miColor='#AAFFFF'">Cyan
+</div>
+
+<p>{{ 1 + 1 }}</p>
+<p ngNonBindable>{{ 1 + 1 }}</p>
