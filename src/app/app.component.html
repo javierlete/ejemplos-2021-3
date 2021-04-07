@@ -23,6 +23,8 @@
   {{ 'casa' | i18nSelect:diccionario }}
   {{ 'perro' | i18nSelect:diccionario }}
   {{ 'otra cosa' | i18nSelect:diccionario }}
+
+  {{ 'prueba de texto' | mayusculador:'primera'}}
 </pre>
 
 <p [ngClass]="objeto.id === 5 ? 'error': ''">El objeto no puede tener id 5</p>
