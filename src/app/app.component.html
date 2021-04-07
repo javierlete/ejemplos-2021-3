@@ -76,3 +76,13 @@
 
 <p>{{ 1 + 1 }}</p>
 <p ngNonBindable>{{ 1 + 1 }}</p>
+
+<p *appAnoserque="false">
+  Prueba de anoserque
+</p>
+
+<ng-template [appAnoserque]="false">
+  <p>
+    Prueba de anoserque
+  </p>
+</ng-template>
